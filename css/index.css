@@ -1,13 +1,37 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: "idroid";
+    src: url(../fontes/idroid.otf);
+}
+
 :root{
-    --primaria: #00E3CC;
-    --secundaria: #32A89C;
-    --terciaria:  #009688;
-    --quarternaria: #44E3D3;
-    --quitanaria: #00635A;
+    --primaria: #00E3CC;    
+    --secundaria:  #009688;    
+    --terciaria: #00635A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
 }
 
 body{
-    background-color: var(--corverde);
+    font-family: "idroid";        
+}
+
+header{
+    background-image: linear-gradient(to bottom, #00E3CC, #009688, #00635A);
+    text-align: center;
+}
+
+header > div{
+    color: white;
+    font-size: 28px;
+    padding: 30px;
+}
+
+nav > ul{
+    list-style: none;
+    color: white;
 }
