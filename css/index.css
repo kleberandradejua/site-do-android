@@ -8,8 +8,9 @@
 :root{
     --primaria: #00E3CC;    
     --secundaria:  #009688;    
-    --terciaria: #00635A;
+    --terciaria: #062b28;
 }
+/*--terciaria: #00635A;*/
 
 *{
     margin: 0;
@@ -17,7 +18,8 @@
 }
 
 body{
-    font-family: "idroid";        
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;     
+    background-color: var(--primaria); 
 }
 
 header{
@@ -27,11 +29,70 @@ header{
 
 header > div{
     color: white;
-    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 38px;
     padding: 30px;
 }
 
-nav > ul{
-    list-style: none;
+header > p{
     color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+nav{
+    text-align: left;
+    padding: 5px;
+}
+
+nav > ul{
+    margin: 5px;
+}
+
+nav > ul > li{
+    display: inline;
+    margin: 5px;
+}
+
+li > a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+li > a:hover{
+    background-color: var(--terciaria);
+    padding: 10px;
+    border-radius: 50px;
+}
+
+main{
+    background-color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    text-align: justify;
+}
+
+h1, h2{
+    font-family: "idroid";
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1{
+    color: var(--secundaria);
+}
+
+h2{
+    padding: 3px;
+    color: #062b28;
+    background-image: linear-gradient(to right, #009687a1, #00e3cc8a, white);
+}
+
+img{
+    width: 100%;
 }
