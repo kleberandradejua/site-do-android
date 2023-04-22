@@ -24,12 +24,13 @@ body{
 
 main{
     background-color: white;
-    width: 80%;
+    max-width: 950px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
     text-align: center;    
     border-radius: 0px 0px 10px 10px;
+    padding: 20px;
 }
 
 p{
@@ -40,7 +41,7 @@ p{
 }
 
 header{
-    background-image: linear-gradient(to bottom, #00E3CC, #009688, #00635A);
+    background-image: linear-gradient(to bottom, var(--primaria), var(--secundaria), #00635A);
     text-align: center;
 }
 
@@ -109,8 +110,8 @@ img{
 }
 
 .irina{
-    width: 1499px;
-    height: 380px;
+    max-width: 930px;
+    min-width: auto;
     padding: 10px;
 }
 
