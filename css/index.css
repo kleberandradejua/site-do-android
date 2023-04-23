@@ -9,8 +9,8 @@
     --primaria: #00E3CC;    
     --secundaria:  #009688;    
     --terciaria: #062b28;
+    --quarta: #00635A;
 }
-/*--terciaria: #00635A;*/
 
 *{
     margin: 0;
@@ -31,6 +31,21 @@ main{
     text-align: center;    
     border-radius: 0px 0px 10px 10px;
     padding: 20px;
+}
+
+a.externo{
+    text-decoration: none;
+    color: #00635A;
+    font-weight: bolder;
+}
+a.externo::after{
+    content: '\1F517';
+}
+a.externo:hover{
+    background-color: #00E3CC;
+    color: #062b28;
+    padding: 3px;
+    border-radius: 10px;
 }
 
 p{
@@ -85,6 +100,7 @@ li > a:hover{
     background-color: var(--terciaria);
     padding: 10px;
     border-radius: 50px;
+    transition-duration: .5s;
 }
 
 h1, h2{
@@ -96,7 +112,7 @@ h1, h2{
 }
 
 h1{
-    color: var(--secundaria);
+    color: var(--quarta);
 }
 
 h2{
@@ -124,11 +140,18 @@ img{
 
 .video{
     background-color: #062b28;
-    width: 100%; 
+    margin: 0px -20px;
+    padding: 15px;
+    padding-bottom: 50%;
+    position: relative;
 }
 
 .videoinside{
-    padding: 10px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    min-width: 90%;
+    min-height: 90%;
 }
 
 article{
@@ -136,27 +159,26 @@ article{
     border-radius: 10px;
     margin: 15px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.486);
-
+    max-width: 930px;
+    min-width: auto;
+    padding: 10px;
 }
 
 h4{
     color: white;
     text-align: left;
-    padding: 5px;
+    padding: 10px;
+    margin: -10px;
     background-color: #009688;
     border-radius: 10px 10px 0px 0px;
 }
 
 article > ul{
     text-align: center;
+    list-style: inside;
+    columns: 2;
+    text-align: justify;
 }
-
-.lista {
-    list-style: none;
-    display: inline-block;  
-    text-align: left; 
-}
-
 
 footer{
     background-color: #062b28;
